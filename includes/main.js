@@ -1,4 +1,5 @@
 var answer_values = [];
+var total_questions = 5;
 var correct = 0;
 
 $(document).ready (function () {
@@ -16,6 +17,6 @@ $(document).ready (function () {
       if (data == "correct") correct++;
     });
     console.log(correct);
-    $('.display-score').text(correct);
+    $('.display-score').text(correct + "/" + total_questions + " correct");
   });
 });
